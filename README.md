@@ -1,7 +1,9 @@
 # daPulse chat app
 In order to run the app do the following:
 1.Make sure you have mongoDB installed and running (use `$ mongod`)
+
 2.In the main project folder run `$ npm install && bower install`
+
 3.Run the server via `$ grunt prod` and open your browser at `http://localhost:8443/`
 
 
