@@ -118,3 +118,5 @@ mongod
 *.ntvs*
 *.njsproj
 *.sln
+
+/dapulse/node_modules
