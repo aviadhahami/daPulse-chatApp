@@ -1,0 +1,17 @@
+<section data-ng-controller="HomeController">
+  <div class="chatWindow">
+    <div class="header">
+      <h1>Welcome to daPulse chat</h1>
+    </div>
+    <div class="chatView" style="overflow-y: scroll">
+      <div class="chatNode" ng-repeat="m in messages">
+        <p class="userName">{{m.user}}:</p>
+        <p class="message">{{m.message}}</p>
+      </div>
+    </div>
+    <div class="chatInput">
+      <input class="textInput" type="text" ng-model="messageInput" ng-keyup="$event.keyCode == 13 && sendMessage()" placeholder="Type your text here.." />
+      <button class="sendButton" ng-click="sendMessage()" >Send</button>
+    </div>
+  </div>
+</section>
